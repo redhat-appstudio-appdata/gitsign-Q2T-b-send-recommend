@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: gitsign
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/tdalton-tenant/gitsign/gitsign@sha256:434c51e715e92f94a09b008ff092ef5e8767667423745974dbb8b103f36b17d2
         imagePullPolicy: Always
         name: container-image
         ports:
