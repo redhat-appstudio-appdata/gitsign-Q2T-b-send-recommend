@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: gitsign
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/tdalton-tenant/gitsign/gitsign@sha256:434c51e715e92f94a09b008ff092ef5e8767667423745974dbb8b103f36b17d2
+        name: container-image
+        resources: {}
+status: {}
